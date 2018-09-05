@@ -1,0 +1,13 @@
+
+<h1> The detail of: {{ car.brand }} Model {{ car.models }} </h1>
+
+ <br>
+<p> <strong> Production Year: </strong> {{ car.production_year }}</p>
+<p> <strong> Mileage Start: </strong> {{ car.mileage_start }}</p>
+<p> <strong> Mileage End: </strong> {{ car.mileage_end }}</p>
+<p> <strong> Plate Number: </strong> {{ car.plate_number }}</p>
+<p> <strong> Color: </strong> {{ car.color }}</p>
+<p> <strong> Location Id: </strong> {{ car.location_id }}</p>
+
+    
+<a href="{% url 'customer:CarReservation' car.id %}"> Reserve </a>

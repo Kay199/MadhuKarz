@@ -1,0 +1,14 @@
+<h1> The Rental Invoice Detail: </h1>
+<p> ID: {{ Rental_Invoice.rental_id }} </p>
+
+ <br>
+<p> <strong> Verbose Name: </strong> {{ Rental_Invoice.verbose_name }}</p>
+<p> <strong> Car Rent: </strong> {{ Rental_Invoice.car_rent }}</p>
+<p> <strong> Insurance Cost: </strong> {{ Rental_Invoice.insurance_cost }}</p>
+<p> <strong> GST: </strong> {{ Rental_Invoice.GST }}</p>
+<p> <strong> Total Amount Payable: </strong> {{ Rental_Invoice.total_amount_payable }}</p>
+
+
+    
+<a href="{% url 'customer:invoicepayment' Rental_Invoice.id %}"> Pay </a>
+

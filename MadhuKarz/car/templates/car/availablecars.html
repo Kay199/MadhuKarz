@@ -1,0 +1,9 @@
+{% if available_cars %}
+    <ul>
+    {% for car in available_cars %}
+        <li><a href="{% url 'car:detail' car.id %}"> {{ car.brand }} </a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No cars are available.</p>
+{% endif %}
